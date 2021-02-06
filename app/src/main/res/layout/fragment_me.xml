@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hongyan.hyutil.widget.CustomToolBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    app:title_text="我的"
+    app:title_visible="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/value_dp_10">
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="@dimen/value_dp_60"
+                android:layout_height="@dimen/value_dp_60"
+                android:src="@drawable/ic_launcher"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_dp_10"
+                android:layout_marginEnd="@dimen/value_dp_10"
+                android:text="111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+                android:textColor="#333333"
+                app:layout_constraintEnd_toStartOf="@+id/tv_follow"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/img_avatar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_dp_10"
+                android:layout_marginLeft="@dimen/value_dp_10"
+                android:background="#F44336"
+                android:text="Test"
+                android:textColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_title"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_dp_100"
+                android:layout_marginTop="@dimen/value_dp_60"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:padding="@dimen/value_dp_10"
+                android:text="约束布局控件使用"
+                android:textColor="#999999"
+                android:textSize="@dimen/value_sp_16"
+                app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+            <Button
+                android:layout_width="@dimen/value_dp_80"
+                android:layout_height="@dimen/value_dp_80"
+                android:layout_marginTop="@dimen/value_dp_10"
+                android:background="@color/color_red"
+                android:text="重叠布局"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+            <TextView
+                android:layout_width="@dimen/value_dp_100"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_dp_50"
+                android:background="#3F51B5"
+                android:gravity="center"
+                android:padding="@dimen/value_dp_10"
+                android:text="左边"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="@dimen/value_dp_100"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/value_dp_50"
+                android:background="#009688"
+                android:gravity="center"
+                android:padding="@dimen/value_dp_10"
+                android:text="右边"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.hongyan.hyutil.widget.CustomToolBar>

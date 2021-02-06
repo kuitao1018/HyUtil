@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hongyan.hyutil.widget.CustomToolBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ctb_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:left_btn_visible="true"
+    app:title_text="自定义控件"
+    app:title_visible="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_dp_50"
+            android:onClick="btnShow1"
+            android:text="任意拖布局"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/bt_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_dp_50"
+            android:onClick="btnShow2"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/bt_1" />
+
+        <Button
+            android:id="@+id/bt_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_dp_50"
+            android:onClick="btnShow3"
+            android:text="多种风格的密码"
+            app:layout_constraintTop_toBottomOf="@+id/bt_2" />
+
+        <Button
+            android:id="@+id/bt_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_dp_50"
+            android:onClick="btnShow4"
+            android:text="三角形"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_3" />
+
+        <Button
+            android:id="@+id/bt_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_dp_50"
+            android:onClick="btnShow5"
+            android:text="滚动控件"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_4" />
+
+        <Button
+            android:id="@+id/bt_6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_dp_50"
+            android:onClick="btnShow6"
+            android:text="滚动控件2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_5" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_dp_50"
+            android:onClick="btnShow7"
+            android:text="Dialog1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_6" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_dp_50"
+            android:onClick="btnShow8"
+            android:text="列表横向滑动"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.hongyan.hyutil.widget.CustomToolBar>

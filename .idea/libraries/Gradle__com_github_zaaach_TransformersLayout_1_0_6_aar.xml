@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.zaaach:TransformersLayout:1.0.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19678ec076881dd5a4715b84f66e1061/jetified-TransformersLayout-1.0.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19678ec076881dd5a4715b84f66e1061/jetified-TransformersLayout-1.0.6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zaaach/TransformersLayout/1.0.6/62235f65543a6fd9944b86055d618ae789484bc4/TransformersLayout-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

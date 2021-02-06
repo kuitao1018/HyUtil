@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hongyan.hyutil.widget.CustomToolBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ctb_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:left_btn_visible="true"
+    app:title_text="百度定位"
+    app:title_visible="true">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+</com.hongyan.hyutil.widget.CustomToolBar>

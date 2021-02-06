@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wuyr.randomdraglayout.RandomDragLayout
+        android:id="@+id/rdl_iv1"
+        android:layout_width="@dimen/value_dp_100"
+        android:layout_height="@dimen/value_dp_50"
+        android:layout_marginLeft="@dimen/value_dp_10"
+        android:layout_marginTop="@dimen/value_dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_red"
+            android:padding="@dimen/value_dp_5"
+            android:src="@drawable/icon_share_wechat" />
+    </com.wuyr.randomdraglayout.RandomDragLayout>
+
+
+    <com.wuyr.randomdraglayout.RandomDragLayout
+        android:id="@+id/rdl_iv2"
+        android:layout_width="@dimen/value_dp_100"
+        android:layout_height="@dimen/value_dp_50"
+        android:layout_marginLeft="@dimen/value_dp_10"
+        android:layout_marginTop="@dimen/value_dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdl_iv1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_gray"
+            android:padding="@dimen/value_dp_5"
+            android:src="@drawable/icon_share_wechat" />
+    </com.wuyr.randomdraglayout.RandomDragLayout>
+
+    <com.wuyr.randomdraglayout.RandomDragLayout
+        android:id="@+id/rdl_iv3"
+        android:layout_width="@dimen/value_dp_100"
+        android:layout_height="@dimen/value_dp_50"
+        android:layout_marginLeft="@dimen/value_dp_10"
+        android:layout_marginTop="@dimen/value_dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/rdl_iv1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_yellow"
+            android:padding="@dimen/value_dp_5"
+            android:src="@drawable/icon_share_wechat" />
+    </com.wuyr.randomdraglayout.RandomDragLayout>
+
+
+    <com.wuyr.randomdraglayout.RandomDragLayout
+        android:layout_width="@dimen/value_dp_100"
+        android:layout_height="@dimen/value_dp_50"
+        android:layout_marginLeft="@dimen/value_dp_10"
+        android:layout_marginTop="@dimen/value_dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/rdl_iv2"
+        app:layout_constraintTop_toBottomOf="@+id/rdl_iv3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_blue"
+            android:padding="@dimen/value_dp_5"
+            android:src="@drawable/icon_share_wechat" />
+    </com.wuyr.randomdraglayout.RandomDragLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

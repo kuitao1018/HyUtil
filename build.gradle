@@ -1,0 +1,36 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.71'
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        //集成绿刀1
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0' // add plugin
+        //集成butterknife
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.3'
+        // 集成kotlin 1
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        //butterknife 必须添加
+        maven { url "https://jitpack.io" }
+        mavenCentral()//高德定位
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

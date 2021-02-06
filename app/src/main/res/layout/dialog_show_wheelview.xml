@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_solid_white_8">
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_dp_40"
+        android:layout_marginStart="@dimen/value_dp_10"
+        android:padding="@dimen/value_dp_10"
+        android:text="取消"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_dp_40"
+        android:layout_marginEnd="@dimen/value_dp_10"
+        android:padding="@dimen/value_dp_10"
+        android:text="确认"
+        android:textColor="@color/color_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/color_gray"
+        app:layout_constraintEnd_toEndOf="@+id/tv_confirm"
+        app:layout_constraintStart_toStartOf="@+id/tv_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cancel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/value_dp_20"
+        android:layout_marginEnd="@dimen/value_dp_20"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <com.hongyan.hyutil.widget.CustomWheelView
+            android:id="@+id/custom_wheel_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

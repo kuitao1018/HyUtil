@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.hongyan.hytotal",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "BUNDLE_MANIFEST"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 2,
+        "versionName": "1.0.1",
+        "outputFile": "..\\debug\\hytotal_v2_2021-02-06_debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.hongyan.hytotal",
+        "split": "",
+        "minSdkVersion": "21"
+      }
+    }
+  ]
+}

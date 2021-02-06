@@ -1,0 +1,193 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // 集成绿刀2
+apply plugin: 'kotlin-android-extensions'//集成kotlin 2
+apply plugin: 'kotlin-android'
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('../hykey.jks')
+            storePassword '123456'
+            keyAlias = 'hykey'
+            keyPassword '123456'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.hongyan.hyutil"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.0.1"
+        multiDexEnabled true
+        //高德定位依赖
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+//        //百度定位
+        sourceSets {
+            main {
+                jniLibs.srcDir 'libs'
+            }
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            zipAlignEnabled true //是否启用zipAlign压缩
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+            minifyEnabled false
+            zipAlignEnabled true //是否启用zipAlign压缩
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+
+        android.applicationVariants.all {
+            variant ->
+                variant.outputs.all {
+                    output ->
+                        def outputFile = output.outputFile
+                        if (outputFile.name.contains("release")) {
+                            def fileName = "hytotal_v${variant.versionCode}_" + new Date().format("yyyy-MM-dd") + "_${variant.name}.apk"
+                            outputFileName = new File("../release/", fileName)
+                        } else if (outputFile.name.contains("debug")) {
+                            def fileName = "hytotal_v${variant.versionCode}_" + new Date().format("yyyy-MM-dd") + "_${variant.name}.apk"
+                            outputFileName = new File("../debug/", fileName)
+                        }
+                }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+        //集成绿刀4
+        greendao {
+            schemaVersion 3 //数据库的版本
+            daoPackage 'com.greendao.gen'
+            targetGenDir 'src/main/java'
+        }
+    }
+
+//    // 差异化打包配置
+//    flavorDimensions "default"
+//    productFlavors {
+//        hytotal1 { // 简易版
+//            dimension "default"
+//            applicationId "com.hongyan.hytotal"
+//            resValue "string", "app_name", "hytotal简易版"
+//            buildConfigField "String", "SERVER_URL", "\"https://fantasy.com\""  // 代码中字符串定义的方法
+//            manifestPlaceholders = ["JPUSH_USER_KEY": ""];// 极光推送key  修改方式
+//        }
+//        hytotal2 { // 专业版
+//            dimension "default"
+//            applicationId "com.hongyan.hytotal.pro"
+//            resValue "string", "app_name", "hytotal专业版"
+//            buildConfigField "String", "SERVER_URL", "\"https://fantasy.pro.com\""
+//            manifestPlaceholders = ["JPUSH_USER_KEY": ""];// 极光推送key  修改方式
+//        }
+//    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // 引入multidex库
+    implementation 'com.android.support:multidex:1.0.3'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'junit:junit:4.13'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    /*****************************Rxjava******************************/
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'com.alibaba:fastjson:1.2.48'
+    implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
+    implementation 'com.uber.autodispose:autodispose-android-archcomponents:1.3.0'
+    //权限管理
+//    implementation 'pub.devrel:easypermissions:2.0.0'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    /********************** BaseRecyclerViewAdapterHelper *********************/
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6'
+    /********************** EasySwipeMenuLayout  侧滑删除控件*********************/
+    implementation 'com.github.anzaizai:EasySwipeMenuLayout:1.1.4'
+    /********************** 轮播图 *********************/
+    implementation 'com.youth.banner:banner:1.4.10'
+    /********************** glide *********************/
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'jp.wasabeef:glide-transformations:3.3.0' //androidX冲突问题
+    /********************** 二维码 *********************/
+    implementation 'com.google.zxing:core:3.3.0'
+    /********************** 沉浸式 *********************/
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    /********************** 选择图片 *********************/
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.4.1'
+    /********************** 屏幕适配 *********************/
+    implementation 'me.jessyan:autosize:1.2.1'
+    /********************** 中文转拼音 *********************/
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    /********************** 任意拖布局 （扩展自QQ空间的列表Header效果） *********************/
+    implementation 'com.wuyr:randomdraglayout:1.2.0'
+    /********************** butterknife*********************/
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    /********************** cameraview *********************/
+    implementation 'com.otaliastudios:cameraview:2.4.0'
+    /********************** 屏幕截图 *********************/
+    implementation files('libs/AndroidScreenCap.jar')
+    /********************** 高德定位 *********************/
+    //3D地图so及jar
+    implementation 'com.amap.api:3dmap:7.1.0'
+    //定位功能
+    implementation 'com.amap.api:location:4.7.2'
+    //搜索功能
+    implementation 'com.amap.api:search:7.1.0'
+    /********************** 百度定位 *********************/
+    implementation files('libs/BaiduLBS_Android.jar')
+    /********************** 加密 *********************/
+    implementation files('libs/commons-codec-1.10.jar')
+    implementation files('libs/sunjce_provider.jar')
+    /********************** wheelview *********************/
+    implementation 'com.contrarywind:wheelview:4.1.0'
+    /********************** N级联动 *********************/
+    implementation 'com.contrarywind:Android-PickerView:4.1.8'
+    /********************** rxpermissions 权限 *********************/
+    implementation 'pub.devrel:easypermissions:2.0.0' //权限管理
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    /********************** 集成绿刀3********************/
+    implementation 'org.greenrobot:greendao:3.3.0' //
+    implementation 'org.greenrobot:greendao-generator:3.3.0'
+    implementation 'io.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1'//数据库升级辅助类
+    /********************** MarqueeView 跑马灯********************/
+    implementation 'com.sunfusheng:MarqueeView:1.4.1'
+    /********************** 崩溃日志********************/
+    implementation 'com.simple:spiderman:1.1.5'
+    /********************** kotlin********************/
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //淘宝商城金刚区布局
+    implementation 'com.github.zaaach:TransformersLayout:1.0.6'
+}

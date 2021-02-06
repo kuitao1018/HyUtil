@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="value_dp_1">1dp</dimen>
+    <dimen name="value_dp_3">3dp</dimen>
+    <dimen name="value_dp_5">5dp</dimen>
+    <dimen name="value_dp_7">7dp</dimen>
+    <dimen name="value_dp_8">8dp</dimen>
+    <dimen name="value_dp_10">10dp</dimen>
+    <dimen name="value_dp_13">13dp</dimen>
+    <dimen name="value_dp_20">20dp</dimen>
+    <dimen name="value_dp_24">24dp</dimen>
+    <dimen name="value_dp_25">25dp</dimen>
+    <dimen name="value_dp_27">27dp</dimen>
+    <dimen name="value_dp_30">30dp</dimen>
+    <dimen name="value_dp_40">40dp</dimen>
+    <dimen name="value_dp_50">50dp</dimen>
+    <dimen name="value_dp_60">60dp</dimen>
+    <dimen name="value_dp_70">70dp</dimen>
+    <dimen name="value_dp_80">80dp</dimen>
+    <dimen name="value_dp_100">100dp</dimen>
+    <dimen name="value_dp_200">200dp</dimen>
+
+    <dimen name="value_sp_12">12sp</dimen>
+    <dimen name="value_sp_14">14sp</dimen>
+    <dimen name="value_sp_16">16sp</dimen>
+    <dimen name="value_sp_18">18sp</dimen>
+    <dimen name="value_sp_22">22sp</dimen>
+
+
+</resources>

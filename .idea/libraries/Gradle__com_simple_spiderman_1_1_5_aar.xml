@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.simple:spiderman:1.1.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/38574c8e269b5d252bc46fa38c6f3267/jetified-spiderman-1.1.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/38574c8e269b5d252bc46fa38c6f3267/jetified-spiderman-1.1.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.simple/spiderman/1.1.5/ee3b60dda1dd5f82a91770d07084702ace15d4f4/spiderman-1.1.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.simple/spiderman/1.1.5/9f9eb957e097b8e7157870070631e3e140566004/spiderman-1.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

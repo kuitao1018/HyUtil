@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hongyan.hyutil.widget.CustomToolBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ctb_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:left_btn_visible="true"
+    app:title_text="玩安卓"
+    app:title_visible="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/wan_title_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_dp_200"
+                app:image_scale_type="center_crop"
+                app:indicator_drawable_selected="@drawable/ic_banner_red"
+                app:indicator_drawable_unselected="@drawable/ic_banner_grey"
+                app:indicator_height="9dp"
+                app:indicator_margin="3dp"
+                app:indicator_width="9dp"
+                app:is_auto_play="true"
+                app:title_background="@color/translucent_background"
+                app:title_height="30dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wan_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.hongyan.hyutil.widget.CustomToolBar>

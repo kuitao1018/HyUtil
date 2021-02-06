@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hongyan.hyutil.widget.CustomToolBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ctb_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:left_btn_visible="true"
+    app:title_text="GPS定位"
+    app:title_visible="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/value_dp_10"
+        android:layout_marginTop="@dimen/value_dp_10"
+        android:layout_marginEnd="@dimen/value_dp_10">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="经度: "
+            android:textSize="@dimen/value_sp_18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/tv_longitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv"
+            app:layout_constraintTop_toTopOf="@id/tv" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_dp_10"
+            android:gravity="center_vertical"
+            android:text="纬度: "
+            android:textSize="@dimen/value_sp_18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+        <EditText
+            android:id="@+id/tv_latitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv2"
+            app:layout_constraintTop_toTopOf="@+id/tv2" />
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_dp_10"
+            android:gravity="center_vertical"
+            android:text="省份: "
+            android:textSize="@dimen/value_sp_18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+
+        <EditText
+            android:id="@+id/tv_adminarea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv3"
+            app:layout_constraintTop_toTopOf="@+id/tv3" />
+
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_dp_10"
+            android:gravity="center_vertical"
+            android:text="城市: "
+            android:textSize="@dimen/value_sp_18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+        <EditText
+            android:id="@+id/tv_locality"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv4"
+            app:layout_constraintTop_toTopOf="@+id/tv4" />
+
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_dp_10"
+            android:gravity="center_vertical"
+            android:text="区域: "
+            android:textSize="@dimen/value_sp_18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+        <EditText
+            android:id="@+id/tv_region"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv5"
+            app:layout_constraintTop_toTopOf="@id/tv5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.hongyan.hyutil.widget.CustomToolBar>
