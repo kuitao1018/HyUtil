@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.sunfusheng:MarqueeView:1.4.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bca5c953bdf96aaba7f0fc8e94677cee/jetified-MarqueeView-1.4.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bca5c953bdf96aaba7f0fc8e94677cee/jetified-MarqueeView-1.4.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/73ea1eba75926ba37eb20efc038dfa55/jetified-MarqueeView-1.4.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/73ea1eba75926ba37eb20efc038dfa55/jetified-MarqueeView-1.4.1/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sunfusheng/MarqueeView/1.4.1/3287068b5981120810bcb695716897c8eed38829/MarqueeView-1.4.1-javadoc.jar!/" />

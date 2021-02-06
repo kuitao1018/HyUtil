@@ -8,7 +8,6 @@ import com.hongyan.hyutil.model.*
 import com.hongyan.hyutil.model.contactview.AddressSortActivity
 import com.hongyan.hyutil.model.custom.BaseCustomViewActivity
 import com.hongyan.hyutil.model.custom.camera.CameraActivity
-import com.hongyan.hyutil.model.greenknife.GreenKnifeActivity
 import com.hongyan.hyutil.model.img.SelectImageActivity
 import com.hongyan.hyutil.model.knowpreview.KnowPreviewActivity
 import com.hongyan.hyutil.model.polling.PollingActivity
@@ -24,7 +23,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
  */
 class HomeFragment : MVPBaseFragment<HomeContract.View?, HomePresenter?>(), HomeContract.View {
     private val titles = arrayListOf<String>("玩安卓", "shop", "二维码", "定位相关", "自定义", "相机相册"
-            , "侧滑删除", "webView", "通讯录", "拍照", "轮询器", "分享", "跑马灯", "绿刀", "知乎图片预览")
+            , "侧滑删除", "webView", "通讯录", "拍照", "轮询器", "分享", "跑马灯","知乎图片预览")
 
     override fun setLayoutId(): Int = R.layout.fragment_home
 
@@ -62,8 +61,7 @@ class HomeFragment : MVPBaseFragment<HomeContract.View?, HomePresenter?>(), Home
                 10 -> startActivity(PollingActivity::class.java)
                 11 -> startActivity(ShareActivity::class.java)
                 12 -> startActivity(MarqueeViewActivity::class.java)
-                13 -> startActivity(GreenKnifeActivity::class.java)
-                14 -> startActivity(KnowPreviewActivity::class.java)
+                13 -> startActivity(KnowPreviewActivity::class.java)
             }
         }
     }

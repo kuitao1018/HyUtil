@@ -8,7 +8,6 @@ import com.contrarywind.listener.OnItemSelectedListener;
 import com.contrarywind.view.WheelView;
 import com.hongyan.hyutil.R;
 import com.hongyan.hyutil.model.PasswordInputActivity;
-import com.hongyan.hyutil.model.custom.pagerlv.PageRecyclerViewActivity;
 import com.hongyan.hyutil.mvp.BaseActivity;
 import com.hongyan.hyutil.utils.L;
 import com.hongyan.hyutil.utils.T;
@@ -131,8 +130,5 @@ public class BaseCustomViewActivity extends BaseActivity {
                 })
                 .build()
                 .shown();
-    }
-    public void btnShow8(View view) {
-        startActivity(PageRecyclerViewActivity.class);
     }
 }

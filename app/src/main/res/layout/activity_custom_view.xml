@@ -73,12 +73,5 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bt_6" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/value_dp_50"
-            android:onClick="btnShow8"
-            android:text="列表横向滑动"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bt_6" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.hongyan.hyutil.widget.CustomToolBar>

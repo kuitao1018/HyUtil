@@ -94,9 +94,7 @@
         <!--分享-->
         <activity android:name="com.hongyan.hyutil.model.ShareActivity" />
         <activity android:name="com.hongyan.hyutil.model.MarqueeViewActivity" />
-        <activity android:name="com.hongyan.hyutil.model.greenknife.GreenKnifeActivity" />
         <activity android:name="com.hongyan.hyutil.model.knowpreview.KnowPreviewActivity" />
-        <activity android:name="com.hongyan.hyutil.model.custom.pagerlv.PageRecyclerViewActivity" />
         <activity android:name="com.hongyan.hyutil.model.ShopActivity" />
         <activity android:name="com.hongyan.hyutil.model.transformerslayout.TransformersLayoutActivity" />
         <activity android:name="com.hongyan.hyutil.model.draganddrop.DragAndDropActivity" />

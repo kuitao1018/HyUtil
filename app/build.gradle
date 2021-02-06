@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'org.greenrobot.greendao' // 集成绿刀2
 apply plugin: 'kotlin-android-extensions'//集成kotlin 2
 apply plugin: 'kotlin-android'
 
@@ -75,12 +74,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
 
-        //集成绿刀4
-        greendao {
-            schemaVersion 3 //数据库的版本
-            daoPackage 'com.greendao.gen'
-            targetGenDir 'src/main/java'
-        }
     }
 
 //    // 差异化打包配置
@@ -128,9 +121,7 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.2.48'
     implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
     implementation 'com.uber.autodispose:autodispose-android-archcomponents:1.3.0'
-    //权限管理
-//    implementation 'pub.devrel:easypermissions:2.0.0'
-    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+  
     /********************** BaseRecyclerViewAdapterHelper *********************/
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6'
     /********************** EasySwipeMenuLayout  侧滑删除控件*********************/
@@ -178,10 +169,6 @@ dependencies {
     /********************** rxpermissions 权限 *********************/
     implementation 'pub.devrel:easypermissions:2.0.0' //权限管理
     implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
-    /********************** 集成绿刀3********************/
-    implementation 'org.greenrobot:greendao:3.3.0' //
-    implementation 'org.greenrobot:greendao-generator:3.3.0'
-    implementation 'io.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1'//数据库升级辅助类
     /********************** MarqueeView 跑马灯********************/
     implementation 'com.sunfusheng:MarqueeView:1.4.1'
     /********************** 崩溃日志********************/
