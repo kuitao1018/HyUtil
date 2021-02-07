@@ -39,6 +39,13 @@ anim design_snackbar_in
 anim design_snackbar_out
 anim dialog_enter
 anim dialog_exit
+anim fragment_close_enter
+anim fragment_close_exit
+anim fragment_fade_enter
+anim fragment_fade_exit
+anim fragment_fast_out_extra_slow_in
+anim fragment_open_enter
+anim fragment_open_exit
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
@@ -868,6 +875,40 @@ attr pwv_pwdStyle
 attr pwv_radius
 attr pwv_spacing
 attr pwv_strokeWidth
+attr qrcv_animTime
+attr qrcv_barCodeTipText
+attr qrcv_barcodeRectHeight
+attr qrcv_borderColor
+attr qrcv_borderSize
+attr qrcv_cornerColor
+attr qrcv_cornerDisplayType
+attr qrcv_cornerLength
+attr qrcv_cornerSize
+attr qrcv_customGridScanLineDrawable
+attr qrcv_customScanLineDrawable
+attr qrcv_isAutoZoom
+attr qrcv_isBarcode
+attr qrcv_isOnlyDecodeScanBoxArea
+attr qrcv_isScanLineReverse
+attr qrcv_isShowDefaultGridScanLineDrawable
+attr qrcv_isShowDefaultScanLineDrawable
+attr qrcv_isShowLocationPoint
+attr qrcv_isShowTipBackground
+attr qrcv_isShowTipTextAsSingleLine
+attr qrcv_isTipTextBelowRect
+attr qrcv_maskColor
+attr qrcv_qrCodeTipText
+attr qrcv_rectWidth
+attr qrcv_scanLineColor
+attr qrcv_scanLineMargin
+attr qrcv_scanLineSize
+attr qrcv_tipBackgroundColor
+attr qrcv_tipTextColor
+attr qrcv_tipTextMargin
+attr qrcv_tipTextSize
+attr qrcv_toolbarHeight
+attr qrcv_topOffset
+attr qrcv_verticalBias
 attr queryBackground
 attr queryHint
 attr quickScaleEnabled
@@ -2258,12 +2299,12 @@ id barrier
 id baseline
 id beginOnFirstDraw
 id beginning
+id bgaqrcode_camera_preview
 id blocking
 id bmapView
 id bottom
 id bottomLine
 id bottom_line
-id bottom_mask
 id bottom_to_top
 id bounce
 id box
@@ -2300,10 +2341,6 @@ id capturePicture
 id capturePictureSnapshot
 id captureVideo
 id captureVideoSnapshot
-id capture_containter
-id capture_crop_layout
-id capture_preview
-id capture_scan_line
 id cart_money
 id cart_num
 id cart_shopp_moular
@@ -2429,6 +2466,7 @@ id focusMarkerContainer
 id focusMarkerFill
 id folder_list
 id forever
+id fragment_container_view_tag
 id front
 id ghost_view
 id ghost_view_holder
@@ -2464,6 +2502,7 @@ id img_avatar
 id incandescent
 id indicatorInside
 id info
+id inside
 id invisible
 id isSnapshot
 id italic
@@ -2513,7 +2552,6 @@ id ll_pub_blog
 id ll_pub_tweet
 id ll_right
 id ll_right_Img
-id ll_scan_help
 id load_more_load_complete_view
 id load_more_load_end_view
 id load_more_load_fail_view
@@ -2522,6 +2560,7 @@ id loading
 id loading_progress
 id loading_text
 id longImg
+id mQRCodeView
 id mRecyclerView
 id map
 id marqueeview
@@ -2650,7 +2689,6 @@ id rlAlbum
 id rlSeekBar
 id rl_bottom
 id rl_main
-id rl_title
 id rlv_dialog
 id root
 id rootView
@@ -2791,10 +2829,7 @@ id toolbar_title
 id toolbar_title_tv
 id top
 id topPanel
-id top_back
 id top_line
-id top_mask
-id top_openpicture
 id top_to_bottom
 id torch
 id touch_outside
@@ -2892,6 +2927,7 @@ id view_offset_helper
 id view_overlay
 id view_pager
 id visible
+id visible_removing_fragment_view_tag
 id wan_data_wb
 id wan_item_date
 id wan_item_name
@@ -3165,6 +3201,8 @@ mipmap ic_new_article
 mipmap ic_new_blog
 mipmap ic_new_tweet
 mipmap icon_test_girl1
+mipmap qrcode_default_grid_scan_line
+mipmap qrcode_default_scan_line
 plurals mtrl_badge_content_description
 raw beep
 raw picture_music
@@ -3235,6 +3273,8 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string format_denied_permission
+string format_denied_permission_and_no_ask
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -4155,6 +4195,8 @@ styleable FlowLayout itemSpacing lineSpacing
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
+styleable Fragment android_name android_id android_tag
+styleable FragmentContainerView android_name android_tag
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable GridViewPager background_color column_count img_height img_width imgtext_margin item_background_color pager_MarginBottom pager_MarginTop pager_loop point_height point_is_circle point_is_show point_margin point_margin_bottom point_margin_page point_normal_color point_select_color point_width row_count text_color text_size verticalSpacing
@@ -4203,6 +4245,7 @@ styleable PopupWindow android_popupBackground android_popupAnimationStyle overla
 styleable PopupWindowBackgroundState state_above_anchor
 styleable ProgressWheel matProg_barColor matProg_barSpinCycleTime matProg_barWidth matProg_circleRadius matProg_fillRadius matProg_linearProgress matProg_progressIndeterminate matProg_rimColor matProg_rimWidth matProg_spinSpeed
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode
+styleable QRCodeView qrcv_animTime qrcv_barCodeTipText qrcv_barcodeRectHeight qrcv_borderColor qrcv_borderSize qrcv_cornerColor qrcv_cornerDisplayType qrcv_cornerLength qrcv_cornerSize qrcv_customGridScanLineDrawable qrcv_customScanLineDrawable qrcv_isAutoZoom qrcv_isBarcode qrcv_isOnlyDecodeScanBoxArea qrcv_isScanLineReverse qrcv_isShowDefaultGridScanLineDrawable qrcv_isShowDefaultScanLineDrawable qrcv_isShowLocationPoint qrcv_isShowTipBackground qrcv_isShowTipTextAsSingleLine qrcv_isTipTextBelowRect qrcv_maskColor qrcv_qrCodeTipText qrcv_rectWidth qrcv_scanLineColor qrcv_scanLineMargin qrcv_scanLineSize qrcv_tipBackgroundColor qrcv_tipTextColor qrcv_tipTextMargin qrcv_tipTextSize qrcv_toolbarHeight qrcv_topOffset qrcv_verticalBias
 styleable RangeSlider values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd

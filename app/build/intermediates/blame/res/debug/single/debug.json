@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_shop.xml.flat",
-        "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\layout\\activity_shop.xml"
-    },
-    {
         "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_scaner_code.xml.flat",
         "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\layout\\activity_scaner_code.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_shop.xml.flat",
+        "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\layout\\activity_shop.xml"
     },
     {
         "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_adapter_know_item_normal.xml.flat",
@@ -44,24 +44,24 @@
         "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\layout\\adaptre_trans_holder_item.xml"
     },
     {
-        "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_pub.xml.flat",
-        "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\layout\\activity_pub.xml"
-    },
-    {
         "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_polling.xml.flat",
         "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\layout\\activity_polling.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_pub.xml.flat",
+        "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\layout\\activity_pub.xml"
     },
     {
         "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher.png.flat",
         "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_checkbox_payment.xml.flat",
-        "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\drawable\\checkbox_payment.xml"
-    },
-    {
         "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_edit.xml.flat",
         "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_checkbox_payment.xml.flat",
+        "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\drawable\\checkbox_payment.xml"
     },
     {
         "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_gv_filter_image.xml.flat",
@@ -88,12 +88,12 @@
         "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\drawable\\icon_delete2.png"
     },
     {
-        "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_select_image.xml.flat",
-        "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\layout\\activity_select_image.xml"
-    },
-    {
         "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_pub_article.xml.flat",
         "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\drawable\\bg_pub_article.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_select_image.xml.flat",
+        "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\layout\\activity_select_image.xml"
     },
     {
         "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dialog_loading.xml.flat",
@@ -108,12 +108,12 @@
         "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\drawable-xhdpi\\ic_pay_wx_tj.png"
     },
     {
-        "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_icon_test_girl1.jpg.flat",
-        "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_test_girl1.jpg"
-    },
-    {
         "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_adapter_wan_android.xml.flat",
         "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\layout\\adapter_wan_android.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_icon_test_girl1.jpg.flat",
+        "source": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon_test_girl1.jpg"
     },
     {
         "merged": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_app_logo.png.flat",

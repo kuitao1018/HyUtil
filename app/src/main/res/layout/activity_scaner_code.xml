@@ -1,150 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/capture_containter"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <SurfaceView
-        android:id="@+id/capture_preview"
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/mQRCodeView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="true"
-        android:fitsSystemWindows="true"/>
-
-    <RelativeLayout
-        android:id="@+id/rl_title"
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/ewm_scan_mask">
-
-        <ImageView
-            android:id="@+id/top_mask"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
-            android:alpha="0.5"
-            android:onClick="btn"
-            android:src="@drawable/ewm__light"/>
-
-        <ImageView
-            android:id="@+id/top_openpicture"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="40dp"
-            android:alpha="0.5"
-            android:onClick="btn"
-            android:src="@drawable/ewm__img"/>
-
-        <ImageView
-            android:id="@+id/top_back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="40dp"
-            android:alpha="0.5"
-            android:onClick="btn"
-            android:src="@drawable/ewm__left_jiantou"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/capture_crop_layout"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
-        android:layout_below="@id/rl_title"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/ic_ewm_capture"
-        android:contentDescription="@string/app_name">
-
-        <ImageView
-            android:id="@+id/capture_scan_line"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_margin="5dp"
-            android:background="@drawable/ic_ewm_kakalib_scan_ray"
-            android:contentDescription="@string/app_name"/>
-    </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/bottom_mask"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@id/capture_crop_layout"
-        android:background="@drawable/ewm_scan_mask"
-        android:contentDescription="@string/app_name"/>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottom_mask"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/rl_title"
-        android:layout_toLeftOf="@id/capture_crop_layout"
-        android:background="@drawable/ewm_scan_mask"
-        android:contentDescription="@string/app_name"/>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottom_mask"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/rl_title"
-        android:layout_toRightOf="@id/capture_crop_layout"
-        android:background="@drawable/ewm_scan_mask"
-        android:contentDescription="@string/app_name"/>
-
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/ll_scan_help"
-        android:layout_centerHorizontal="true"
-        android:text="将二维码图片对准扫描框即可自动扫描"
-        android:textColor="@android:color/white"
-        android:textSize="15sp"/>
-
-    <LinearLayout
-        android:id="@+id/ll_scan_help"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/capture_crop_layout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-
-        android:onClick="btn"
-        android:weightSum="2">
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/ic_ewm_code"
-            android:gravity="center"
-            android:padding="10dp"
-            android:src="@drawable/ic_ewm_code"
-            android:text="二维码"
-            android:textColor="#DBD5D5"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/ic_ewm_linecode_icon"
-            android:gravity="center"
-            android:src="@drawable/ic_ewm_linecode_icon"
-            android:text="条形码"
-            android:textColor="#DBD5D5"/>
-    </LinearLayout>
+        app:qrcv_animTime="500"
+        app:qrcv_barcodeRectHeight="140dp"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="0.5dp"
+        app:qrcv_cornerColor="@color/colorAccent"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="false"
+        app:qrcv_isScanLineReverse="true"
+        app:qrcv_isShowDefaultGridScanLineDrawable="false"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowTipBackground="true"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="true"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_qrCodeTipText="将二维码放入框内，即可自动扫描"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="@color/colorAccent"
+        app:qrcv_scanLineMargin="0dp"
+        app:qrcv_scanLineSize="0.5dp"
+        app:qrcv_tipTextColor="@android:color/white"
+        app:qrcv_tipTextSize="12dp"
+        app:qrcv_toolbarHeight="48dp"
+        app:qrcv_verticalBias="0.4" />
 
 </RelativeLayout>

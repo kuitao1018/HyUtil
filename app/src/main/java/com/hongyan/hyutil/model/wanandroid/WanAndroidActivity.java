@@ -21,6 +21,8 @@ import com.hongyan.hyutil.widget.LoadingDialog;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -94,7 +96,7 @@ public class WanAndroidActivity extends MVPBaseActivity<WanAndroidContract.View,
     }
 
     @Override
-    public void onLoadingBannerSuccess(List<WanAndroidBannerBean.DataBean> data) {
+    public void onLoadingBannerSuccess(@NotNull List<WanAndroidBannerBean.DataBean> data) {
         for (int i = 0; i < data.size(); i++) {
             WanAndroidBannerBean.DataBean wanAndroidBannerBean = data.get(i);
             //设置图片加载器
@@ -115,7 +117,7 @@ public class WanAndroidActivity extends MVPBaseActivity<WanAndroidContract.View,
         mLoadingDialog.hide();
     }
 
-    private class WanAndroidItem extends RecyclerView.ItemDecoration {
+    private static class WanAndroidItem extends RecyclerView.ItemDecoration {
         @Override
         public void getItemOffsets(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
             super.getItemOffsets(outRect, view, parent, state);

@@ -7,7 +7,7 @@
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="28" />
+        android:targetSdkVersion="30" />
 
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -47,6 +47,12 @@
         android:required="false" />
     <uses-feature
         android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera.flash"
         android:required="false" />
 
     <application

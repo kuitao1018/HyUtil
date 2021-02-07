@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HyTotal</string>
-
+    <string name="format_denied_permission">已拒绝权限%1$s</string>
+    <string name="format_denied_permission_and_no_ask">已拒绝权限%1$s并不再询问</string>
 </resources>
