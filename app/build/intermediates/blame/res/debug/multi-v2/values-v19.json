@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\AndroidProjects2\\HongyanTotal-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\98697\\.gradle\\caches\\transforms-2\\files-2.1\\aff3554f8999a5aa6bda3ce097eae1b3\\jetified-picture_library-v2.4.1\\res\\values-v19\\values-v19.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "343"
+                    }
+                }
+            ]
+        }
+    ]
+}

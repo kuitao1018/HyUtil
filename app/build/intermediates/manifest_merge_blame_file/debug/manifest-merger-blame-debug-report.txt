@@ -1,0 +1,424 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.hongyan.hyutil"
+4    android:versionCode="2"
+5    android:versionName="1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+11-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:6:5-80
+11-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:6:22-77
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:7:5-66
+12-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:7:22-63
+13    <!-- 选择图片功能 -->
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:9:5-80
+14-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:9:22-77
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:10:5-65
+15-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:10:22-62
+16
+17    <uses-feature android:name="android.hardware.camera" />
+17-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:11:5-60
+17-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:11:19-57
+18    <uses-feature android:name="android.hardware.camera.autofocus" />
+18-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:12:5-70
+18-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:12:19-67
+19
+20    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+20-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:13:5-71
+20-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:13:22-68
+21    <!-- 用于进行网络定位 -->
+22    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+22-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:15:5-81
+22-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:15:22-78
+23    <!-- 用于访问GPS定位 -->
+24    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+24-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:17:5-79
+24-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:17:22-76
+25    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+26-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:19:5-79
+26-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:19:22-76
+27    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+28    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+28-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:21:5-76
+28-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:21:22-73
+29    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+30    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+30-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:23:5-76
+30-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:23:22-73
+31    <!-- 用于访问网络，网络定位需要上网 -->
+32    <uses-permission android:name="android.permission.INTERNET" />
+32-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:25:5-67
+32-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:25:22-64
+33    <!-- 用于读取手机当前的状态 -->
+34    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+34-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:27:5-75
+34-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:27:22-72
+35    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+36    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+36-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:29:5-81
+36-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:29:22-78
+37    <!-- 用于申请调用A-GPS模块 -->
+38    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+38-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:31:5-89
+38-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:31:22-86
+39    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+40    <uses-permission android:name="android.permission.BLUETOOTH" />
+40-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:33:5-68
+40-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:33:22-65
+41    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+41-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:34:5-74
+41-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:34:22-71
+42    <uses-permission android:name="android.permission.READ_LOGS" />
+42-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:35:5-36:47
+42-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:35:22-65
+43
+44    <uses-feature
+44-->[com.otaliastudios:cameraview:2.4.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\61c51621359103d3aa382cb8a04f3329\jetified-cameraview-2.4.0\AndroidManifest.xml:25:5-27:36
+45        android:name="android.hardware.camera.front"
+45-->[com.otaliastudios:cameraview:2.4.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\61c51621359103d3aa382cb8a04f3329\jetified-cameraview-2.4.0\AndroidManifest.xml:26:9-53
+46        android:required="false" />
+46-->[com.otaliastudios:cameraview:2.4.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\61c51621359103d3aa382cb8a04f3329\jetified-cameraview-2.4.0\AndroidManifest.xml:27:9-33
+47    <uses-feature
+47-->[com.otaliastudios:cameraview:2.4.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\61c51621359103d3aa382cb8a04f3329\jetified-cameraview-2.4.0\AndroidManifest.xml:28:5-30:36
+48        android:name="android.hardware.microphone"
+48-->[com.otaliastudios:cameraview:2.4.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\61c51621359103d3aa382cb8a04f3329\jetified-cameraview-2.4.0\AndroidManifest.xml:29:9-51
+49        android:required="false" />
+49-->[com.otaliastudios:cameraview:2.4.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\61c51621359103d3aa382cb8a04f3329\jetified-cameraview-2.4.0\AndroidManifest.xml:30:9-33
+50
+51    <application
+51-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:38:5-126:19
+52        android:name="com.hongyan.hyutil.BaseApplication"
+52-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:39:9-58
+53        android:allowBackup="true"
+53-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:40:9-35
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.3.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\49ff555bddc137dcd4d9ece1bcf4f1da\core-1.3.1\AndroidManifest.xml:24:18-86
+55        android:debuggable="true"
+56        android:icon="@mipmap/app_logo"
+56-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:41:9-40
+57        android:label="@string/app_name"
+57-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:42:9-41
+58        android:roundIcon="@mipmap/app_logo"
+58-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:43:9-45
+59        android:supportsRtl="true"
+59-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:44:9-35
+60        android:testOnly="true"
+61        android:theme="@style/AppTheme" >
+61-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:45:9-40
+62        <activity
+62-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:46:9-55:20
+63            android:name="com.hongyan.hyutil.model.SplashActivity"
+63-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:47:13-67
+64            android:screenOrientation="portrait"
+64-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:48:13-49
+65            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+65-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:49:13-72
+66            <intent-filter>
+66-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:50:13-54:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:51:17-69
+67-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:51:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:53:17-77
+69-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:53:27-74
+70            </intent-filter>
+71        </activity>
+72        <activity
+72-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:57:9-59:100
+73            android:name="com.hongyan.hyutil.MainActivity"
+73-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:58:13-59
+74            android:configChanges="keyboardHidden|orientation|screenSize|locale|layoutDirection" />
+74-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:59:13-97
+75        <!-- 适配方案 -->
+76        <meta-data
+76-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:61:9-63:35
+77            android:name="design_width_in_dp"
+77-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:62:13-46
+78            android:value="360" />
+78-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:63:13-32
+79        <meta-data
+79-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:64:9-66:35
+80            android:name="design_height_in_dp"
+80-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:65:13-47
+81            android:value="640" />
+81-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:66:13-32
+82
+83        <activity android:name="com.hongyan.hyutil.model.wanandroid.WanAndroidActivity" />
+83-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:68:9-91
+83-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:68:19-88
+84        <activity android:name="com.hongyan.hyutil.model.wanandroid.activity.WanAndroidItemDataActivity" />
+84-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:69:9-108
+84-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:69:19-105
+85        <activity android:name="com.hongyan.hyutil.model.pay.PayActivity" />
+85-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:70:9-77
+85-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:70:19-74
+86        <activity android:name="com.hongyan.hyutil.model.scaner.ScannerCodeActivity" />
+86-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:71:9-88
+86-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:71:19-85
+87        <activity android:name="com.hongyan.hyutil.model.custom.BaseCustomViewActivity" />
+87-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:72:9-91
+87-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:72:19-88
+88        <activity android:name="com.hongyan.hyutil.model.multiple.MultipleItemActivity" />
+88-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:73:9-91
+88-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:73:19-88
+89        <activity android:name="com.hongyan.hyutil.model.LateralSpreadActivity" />
+89-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:74:9-83
+89-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:74:19-80
+90        <activity android:name="com.hongyan.hyutil.model.custom.CustomView01Activity" />
+90-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:75:9-89
+90-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:75:19-86
+91        <activity
+91-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:76:9-78:47
+92            android:name="com.hongyan.hyutil.model.PubActivity"
+92-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:77:13-64
+93            android:theme="@style/PubTheme" />
+93-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:78:13-44
+94        <activity android:name="com.hongyan.hyutil.model.WebViewActivity" />
+94-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:79:9-77
+94-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:79:19-74
+95        <activity android:name="com.hongyan.hyutil.model.contactview.AddressSortActivity" />
+95-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:80:9-93
+95-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:80:19-90
+96        <activity android:name="com.hongyan.hyutil.model.PasswordInputActivity" />
+96-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:81:9-83
+96-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:81:19-80
+97        <activity android:name="com.hongyan.hyutil.model.custom.camera.CameraActivity" />
+97-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:82:9-90
+97-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:82:19-87
+98        <activity android:name="com.hongyan.hyutil.model.custom.camera.PicturePreviewActivity" />
+98-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:83:9-98
+98-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:83:19-95
+99        <activity android:name="com.hongyan.hyutil.model.custom.camera.VideoPreviewActivity" />
+99-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:84:9-96
+99-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:84:19-93
+100        <!-- 定位方法列表 -->
+101        <activity android:name="com.hongyan.hyutil.model.positioning.PositioningActivity" />
+101-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:86:9-93
+101-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:86:19-90
+102        <activity android:name="com.hongyan.hyutil.model.positioning.GpsActivity" />
+102-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:87:9-85
+102-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:87:19-82
+103        <activity android:name="com.hongyan.hyutil.model.positioning.GaodeActivity" />
+103-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:88:9-87
+103-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:88:19-84
+104        <activity android:name="com.hongyan.hyutil.model.positioning.BaiduActivity" />
+104-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:89:9-87
+104-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:89:19-84
+105        <!-- 选择图片 -->
+106        <activity android:name="com.hongyan.hyutil.model.img.SelectImageActivity" />
+106-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:91:9-85
+106-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:91:19-82
+107        <!-- 轮询方法 -->
+108        <activity android:name="com.hongyan.hyutil.model.polling.PollingActivity" />
+108-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:93:9-85
+108-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:93:19-82
+109        <!-- 分享 -->
+110        <activity android:name="com.hongyan.hyutil.model.ShareActivity" />
+110-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:95:9-75
+110-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:95:19-72
+111        <activity android:name="com.hongyan.hyutil.model.MarqueeViewActivity" />
+111-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:96:9-81
+111-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:96:19-78
+112        <activity android:name="com.hongyan.hyutil.model.knowpreview.KnowPreviewActivity" />
+112-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:97:9-93
+112-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:97:19-90
+113        <activity android:name="com.hongyan.hyutil.model.ShopActivity" />
+113-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:98:9-74
+113-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:98:19-71
+114        <activity android:name="com.hongyan.hyutil.model.transformerslayout.TransformersLayoutActivity" />
+114-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:99:9-107
+114-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:99:19-104
+115        <activity android:name="com.hongyan.hyutil.model.draganddrop.DragAndDropActivity" />
+115-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:100:9-93
+115-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:100:19-90
+116
+117        <!-- 高德定位key -->
+118        <meta-data
+118-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:103:9-105:64
+119            android:name="com.amap.api.v2.apikey"
+119-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:104:13-50
+120            android:value="4fe53d819ce174c0be2d886f614dc980" />
+120-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:105:13-61
+121
+122        <service android:name="com.amap.api.location.APSService" />
+122-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:106:9-68
+122-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:106:18-65
+123        <!-- 百度定位 -->
+124        <meta-data
+124-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:108:9-110:64
+125            android:name="com.baidu.lbsapi.API_KEY"
+125-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:109:13-52
+126            android:value="AvD4ntkQQ9aQejaoY5V6uCDcoFQT7ae7" />
+126-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:110:13-61
+127
+128        <service
+128-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:111:9-114:41
+129            android:name="com.baidu.location.f"
+129-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:112:13-48
+130            android:enabled="true"
+130-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:113:13-35
+131            android:process=":remote" />
+131-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:114:13-38
+132        <!-- android:authorities="${application}.provider" -->
+133        <provider
+133-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:116:9-124:20
+134            android:name="androidx.core.content.FileProvider"
+134-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:117:13-62
+135            android:authorities="com.hongyan.hyutil.provider"
+135-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:118:13-62
+136            android:exported="false"
+136-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:119:13-37
+137            android:grantUriPermissions="true" >
+137-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:120:13-47
+138            <meta-data
+138-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:121:13-123:54
+139                android:name="android.support.FILE_PROVIDER_PATHS"
+139-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:122:17-67
+140                android:resource="@xml/file_paths" />
+140-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:123:17-51
+141        </provider>
+142        <provider
+142-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:12:9-20:20
+143            android:name="com.luck.picture.lib.PictureFileProvider"
+143-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:13:13-68
+144            android:authorities="com.hongyan.hyutil.provider"
+144-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:14:13-60
+145            android:exported="false"
+145-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:15:13-37
+146            android:grantUriPermissions="true" >
+146-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:16:13-47
+147            <meta-data
+147-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:121:13-123:54
+148                android:name="android.support.FILE_PROVIDER_PATHS"
+148-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:122:17-67
+149                android:resource="@xml/file_paths" />
+149-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:123:17-51
+150        </provider>
+151
+152        <activity
+152-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:22:9-24:77
+153            android:name="com.luck.picture.lib.PictureSelectorActivity"
+153-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:23:13-72
+154            android:configChanges="orientation|keyboardHidden|screenSize" />
+154-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:24:13-74
+155        <activity
+155-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:25:9-27:77
+156            android:name="com.luck.picture.lib.PictureSelectorWeChatStyleActivity"
+156-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:26:13-83
+157            android:configChanges="orientation|keyboardHidden|screenSize" />
+157-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:27:13-74
+158        <activity
+158-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:28:9-31:64
+159            android:name="com.luck.picture.lib.PictureSelectorCameraEmptyActivity"
+159-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:29:13-83
+160            android:configChanges="orientation|keyboardHidden|screenSize"
+160-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:30:13-74
+161            android:theme="@style/Picture.Theme.Translucent" />
+161-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:31:13-61
+162        <activity
+162-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:32:9-34:77
+163            android:name="com.luck.picture.lib.PicturePreviewActivity"
+163-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:33:13-71
+164            android:configChanges="orientation|keyboardHidden|screenSize" />
+164-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:34:13-74
+165        <activity
+165-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:35:9-37:77
+166            android:name="com.luck.picture.lib.PictureSelectorPreviewWeChatStyleActivity"
+166-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:36:13-90
+167            android:configChanges="orientation|keyboardHidden|screenSize" />
+167-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:37:13-74
+168        <activity
+168-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:38:9-41:50
+169            android:name="com.luck.picture.lib.PictureVideoPlayActivity"
+169-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:39:13-73
+170            android:configChanges="orientation|keyboardHidden|screenSize"
+170-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:40:13-74
+171            android:screenOrientation="sensor" />
+171-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:41:13-47
+172        <activity
+172-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:42:9-44:77
+173            android:name="com.luck.picture.lib.PictureExternalPreviewActivity"
+173-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:43:13-79
+174            android:configChanges="orientation|keyboardHidden|screenSize" />
+174-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:44:13-74
+175        <activity
+175-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:45:9-47:77
+176            android:name="com.luck.picture.lib.PicturePlayAudioActivity"
+176-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:46:13-73
+177            android:configChanges="orientation|keyboardHidden|screenSize" />
+177-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:47:13-74
+178        <activity
+178-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:48:9-50:61
+179            android:name="com.yalantis.ucrop.UCropActivity"
+179-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:49:13-60
+180            android:theme="@style/Base.Theme.NoActionBar" />
+180-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:50:13-58
+181        <activity
+181-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:51:9-53:61
+182            android:name="com.yalantis.ucrop.PictureMultiCuttingActivity"
+182-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:52:13-74
+183            android:theme="@style/Base.Theme.NoActionBar" />
+183-->[com.github.LuckSiege.PictureSelector:picture_library:v2.4.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\aff3554f8999a5aa6bda3ce097eae1b3\jetified-picture_library-v2.4.1\AndroidManifest.xml:53:13-58
+184        <activity
+184-->[pub.devrel:easypermissions:2.0.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\20af65de8740185bcc51b5c42bc99fa3\jetified-easypermissions-2.0.0\AndroidManifest.xml:12:9-16:66
+185            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+185-->[pub.devrel:easypermissions:2.0.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\20af65de8740185bcc51b5c42bc99fa3\jetified-easypermissions-2.0.0\AndroidManifest.xml:13:13-86
+186            android:exported="false"
+186-->[pub.devrel:easypermissions:2.0.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\20af65de8740185bcc51b5c42bc99fa3\jetified-easypermissions-2.0.0\AndroidManifest.xml:14:13-37
+187            android:label=""
+187-->[pub.devrel:easypermissions:2.0.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\20af65de8740185bcc51b5c42bc99fa3\jetified-easypermissions-2.0.0\AndroidManifest.xml:15:13-29
+188            android:theme="@style/EasyPermissions.Transparent" />
+188-->[pub.devrel:easypermissions:2.0.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\20af65de8740185bcc51b5c42bc99fa3\jetified-easypermissions-2.0.0\AndroidManifest.xml:16:13-63
+189
+190        <provider
+190-->[com.simple:spiderman:1.1.5] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\4f9af6c8422a0614d74dde9f783566d4\jetified-spiderman-1.1.5\AndroidManifest.xml:11:9-19:20
+191            android:name="com.simple.spiderman.SpiderManFileProvider"
+191-->[com.simple:spiderman:1.1.5] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\4f9af6c8422a0614d74dde9f783566d4\jetified-spiderman-1.1.5\AndroidManifest.xml:12:13-70
+192            android:authorities="com.hongyan.hyutil.spidermanfileprovider"
+192-->[com.simple:spiderman:1.1.5] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\4f9af6c8422a0614d74dde9f783566d4\jetified-spiderman-1.1.5\AndroidManifest.xml:13:13-73
+193            android:exported="false"
+193-->[com.simple:spiderman:1.1.5] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\4f9af6c8422a0614d74dde9f783566d4\jetified-spiderman-1.1.5\AndroidManifest.xml:14:13-37
+194            android:grantUriPermissions="true" >
+194-->[com.simple:spiderman:1.1.5] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\4f9af6c8422a0614d74dde9f783566d4\jetified-spiderman-1.1.5\AndroidManifest.xml:15:13-47
+195            <meta-data
+195-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:121:13-123:54
+196                android:name="android.support.FILE_PROVIDER_PATHS"
+196-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:122:17-67
+197                android:resource="@xml/spiderman_file_paths" />
+197-->D:\AndroidProjects2\HongyanTotal-master\app\src\main\AndroidManifest.xml:123:17-51
+198        </provider>
+199
+200        <activity android:name="com.simple.spiderman.CrashActivity" />
+200-->[com.simple:spiderman:1.1.5] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\4f9af6c8422a0614d74dde9f783566d4\jetified-spiderman-1.1.5\AndroidManifest.xml:21:9-71
+200-->[com.simple:spiderman:1.1.5] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\4f9af6c8422a0614d74dde9f783566d4\jetified-spiderman-1.1.5\AndroidManifest.xml:21:19-68
+201
+202        <provider
+202-->[me.jessyan:autosize:1.2.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\69737c82e2fdab19fb86b94ebbb915ae\jetified-autosize-1.2.1\AndroidManifest.xml:12:9-16:43
+203            android:name="me.jessyan.autosize.InitProvider"
+203-->[me.jessyan:autosize:1.2.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\69737c82e2fdab19fb86b94ebbb915ae\jetified-autosize-1.2.1\AndroidManifest.xml:13:13-60
+204            android:authorities="com.hongyan.hyutil.autosize-init-provider"
+204-->[me.jessyan:autosize:1.2.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\69737c82e2fdab19fb86b94ebbb915ae\jetified-autosize-1.2.1\AndroidManifest.xml:14:13-74
+205            android:exported="false"
+205-->[me.jessyan:autosize:1.2.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\69737c82e2fdab19fb86b94ebbb915ae\jetified-autosize-1.2.1\AndroidManifest.xml:15:13-37
+206            android:multiprocess="true" />
+206-->[me.jessyan:autosize:1.2.1] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\69737c82e2fdab19fb86b94ebbb915ae\jetified-autosize-1.2.1\AndroidManifest.xml:16:13-40
+207
+208        <meta-data
+208-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\91dbf5c9f6a10e5466f7e66567a5eec5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+209            android:name="com.google.android.gms.version"
+209-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\91dbf5c9f6a10e5466f7e66567a5eec5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+210            android:value="@integer/google_play_services_version" />
+210-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\98697\.gradle\caches\transforms-2\files-2.1\91dbf5c9f6a10e5466f7e66567a5eec5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+211    </application>
+212
+213</manifest>

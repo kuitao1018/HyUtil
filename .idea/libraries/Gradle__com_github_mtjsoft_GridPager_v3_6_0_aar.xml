@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.mtjsoft:GridPager:v3.6.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/14cff4283478b4e1aef411b47a214ca6/jetified-GridPager-v3.6.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/14cff4283478b4e1aef411b47a214ca6/jetified-GridPager-v3.6.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mtjsoft/GridPager/v3.6.0/a4b7bc01c090c1f9e094b9422c02b23b73731d7/GridPager-v3.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

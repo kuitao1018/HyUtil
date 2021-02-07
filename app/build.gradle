@@ -175,6 +175,7 @@ dependencies {
     implementation 'com.simple:spiderman:1.1.5'
     /********************** kotlin********************/
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    //淘宝商城金刚区布局
+    //淘宝商城金刚区布局  TransformersLayout  GridPager
     implementation 'com.github.zaaach:TransformersLayout:1.0.6'
+    implementation 'com.github.mtjsoft:GridPager:v3.6.0'
 }
